@@ -210,17 +210,17 @@ console.log(galImg);
 
 	$(".header_img").css("height",headerImg);
 	$(".cont_wrap").css("min-height",$(window).height());
-	$(".gal_img").css("height",galImg + 35);
+	$(".gal_img").css("height",galImg + 25);
 	$(".gal_img").css("background-position-y","-100px");
-	$(".gal_img2").css("height",(galImg / 2) + 10);
+	$(".gal_img2").css("height",(galImg / 2) + 20);
 
 	$(window).bind("orientationchange, resize", function(e) {
 		var headerImg = $(".header_img").width();
 		var galImg = $(".gal_img").width();
 		$(".header_img").css("height",headerImg);
 		$(".cont_wrap").css("min-height",$(window).height());
-		$(".gal_img").css("height",galImg + 35);
-		$(".gal_img2").css("height",(galImg / 2) + 10);
+		$(".gal_img").css("height",galImg + 25);
+		$(".gal_img2").css("height",(galImg / 2) + 20);
 	});
 
 	window.addEventListener('scroll', function() {
